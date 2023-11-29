@@ -98,7 +98,9 @@
                 <IconTabFilter
                     icon="sap-icon://home"
                     iconColor="Marker"
-                />
+                >
+
+                 </IconTabFilter>
             </items>
         </IconTabBar>
     </Page>
