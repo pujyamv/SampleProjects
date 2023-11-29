@@ -1,0 +1,52 @@
+{
+    "_version": "1.50.0",
+    "sap.app": {
+        "id": "pujyamv",
+        "type": "application",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{title}}",
+        "description": "{{description}}",
+        "i18n": "i18n/i18n.properties"
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "phone": true,
+            "tablet": true
+        },
+        "supportedThemes": [
+            "sap_bluecrystal",
+            "sap_belize"
+        ]
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.110.0",
+            "libs": {
+                "sap.m": {
+                    "minVersion": "1.110.0"
+                }
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleUrl": "i18n/i18n.properties"
+                }
+            },
+            "" : {
+            "type": "sap.ui.model.json.JSONModel",
+             "uri": "modelData/fruits.json"
+
+            }
+        }
+    }
+}

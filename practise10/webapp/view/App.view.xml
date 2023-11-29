@@ -1,0 +1,9 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="pujyamv.controller.App">
+
+
+<App id="Appcon"></App>
+
+
+</mvc:View>

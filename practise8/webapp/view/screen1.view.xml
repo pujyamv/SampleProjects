@@ -1,0 +1,91 @@
+<mvc:View xmlns:table="sap.ui.table" 
+          xmlns:core="sap.ui.core" 
+          xmlns:form="sap.ui.layout.form"  
+          xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="home.controller.screen1" >
+
+
+<table:Table  rows="{/Studentrecords}"  
+              rowSelectionChange="onSelectionChange" 
+              selectionMode="Single" 
+              alternateRowColors="true"
+              visibleRowCount="5"
+              >
+<table:columns>
+<table:Column label="StudentID"> 
+<table:template>
+<Text text="{StudentID}"></Text>
+</table:template>
+</table:Column> 
+<table:Column label="StudentName"> 
+<table:template>
+<Text text="{StudentName}"></Text>
+</table:template>
+</table:Column> 
+<table:Column label="Branch"> 
+<table:template>
+<Text text="{Branch}"></Text>
+</table:template>
+
+</table:Column> 
+<table:Column label="College">
+<table:template>
+<Text text="{College}"></Text>
+</table:template>
+
+ </table:Column> 
+<table:Column label="City"> 
+<table:template>
+<Text text="{City}"></Text>
+</table:template>
+
+</table:Column> 
+
+<table:Column label="CampusPlaced">
+
+<table:template>
+<CheckBox  selected="{Campusplaced}"></CheckBox>
+</table:template>
+
+</table:Column>
+
+
+</table:columns>
+
+</table:Table>
+
+
+
+
+
+
+
+
+
+<form:SimpleForm id="idform1">
+<core:Title text="Student Details from Table"></core:Title>
+
+<Label text="Student ID"> </Label>
+<Input id="idsid" value="{StudentID}" ></Input>
+
+<Label text="Student Name"></Label>
+<Input id="idsnm" value="{StudentName}" ></Input>
+
+
+<Label text="Branch"></Label>
+<Input id="idbrn" value="{Branch}" ></Input>
+
+<Label text="College"></Label>
+<Input id="idclg" value="{College}" ></Input>
+
+
+<Label text="City"></Label>
+<Input id="idcty" value="{City}" ></Input>
+
+
+</form:SimpleForm>
+
+
+
+</mvc:View>

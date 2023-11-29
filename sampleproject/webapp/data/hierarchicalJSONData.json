@@ -1,0 +1,276 @@
+{
+    "static": {},
+    "combined": {
+        "MasterListSet": [
+            {
+                "ID": "20554",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": "Matthew",
+                "CreatorTitle": "Sales Order Creator",
+                "Nodes": [
+                    {
+                        "ID": "10",
+                        "Currency": "USD",
+                        "Status": "Open",
+                        "CreatorName": "Matthew Black",
+                        "CreatorTitle": "Sales Order Creator",
+                        "StatusFormula": null
+                    },
+                    {
+                        "ID": "20",
+                        "Currency": "USD",
+                        "Status": "Open",
+                        "CreatorName": "Matthew Black",
+                        "CreatorTitle": "Sales Order Creator",
+                        "StatusFormula": null
+                    }
+                ]
+            },
+            {
+                "ID": "20553",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null,
+                "Nodes": [
+                    {
+                        "ID": "30",
+                        "Currency": "USD",
+                        "Status": "Open",
+                        "CreatorName": null,
+                        "CreatorTitle": null,
+                        "StatusFormula": null
+                    }
+                ]
+            },
+            {
+                "ID": "20500",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20499",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20498",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20445",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20444",
+                "Currency": "USD",
+                "Status": "Warning",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20443",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20442",
+                "Currency": "USD",
+                "Status": "Warning",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20441",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20440",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20439",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20438",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20437",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            },
+            {
+                "ID": "20436",
+                "Currency": "USD",
+                "Status": "Success",
+                "StatusFormula": null,
+                "CreatorName": null,
+                "CreatorTitle": null
+            }
+        ],
+        "SOItemsSet": [
+            {
+                "ID": "10",
+                "Item": "REA High Tech demo product",
+                "Quantity": "43,534",
+                "Price": "4.10",
+                "Currency": "USD",
+                "SubTotal": "178,489.40",
+                "Status": "Open",
+                "Percentage": "0",
+                "MaterialNumber": "1889",
+                "CustomerMaterialNumber": null,
+                "ShippingAddress1": "489 Highway",
+                "ShippingAddress2": "ANTIOCH, IL 60002 US",
+                "ShippingAddress3": "847643-8765",
+                "ShippingCarrier": null,
+                "Incoterms": "FH ANTIOCH",
+                "SOID": "20554",
+                "___FK_175bc61249cb8fe60abe151b": "20554",
+                "ItemFormula": null,
+                "ShippingAddressFormula": null,
+                "___FK_db337767630e49980abf5c8f": null,
+                "CreatorName": "Matthew Black",
+                "CreatorTitle": "Sales Order Creator",
+                "StatusFormula": null
+            },
+            {
+                "ID": "20",
+                "Item": "Easy4U",
+                "Quantity": "1",
+                "Price": "1",
+                "Currency": "USD",
+                "SubTotal": "0.50",
+                "Status": "Open",
+                "Percentage": "0",
+                "MaterialNumber": "358",
+                "CustomerMaterialNumber": null,
+                "ShippingAddress1": "489 Highway",
+                "ShippingAddress2": null,
+                "ShippingAddress3": null,
+                "ShippingCarrier": null,
+                "Incoterms": null,
+                "SOID": null,
+                "___FK_175bc61249cb8fe60abe151b": "20554",
+                "ItemFormula": null,
+                "ShippingAddressFormula": null,
+                "___FK_db337767630e49980abf5c8f": null,
+                "CreatorName": "Matthew Black",
+                "CreatorTitle": "Sales Order Creator",
+                "StatusFormula": null
+            },
+            {
+                "ID": "30",
+                "Item": "Easy4U",
+                "Quantity": "1",
+                "Price": "1",
+                "Currency": "USD",
+                "SubTotal": "2.50",
+                "Status": "Open",
+                "Percentage": "0",
+                "MaterialNumber": null,
+                "CustomerMaterialNumber": null,
+                "ShippingAddress1": null,
+                "ShippingAddress2": null,
+                "ShippingAddress3": null,
+                "ShippingCarrier": null,
+                "Incoterms": null,
+                "SOID": null,
+                "___FK_175bc61249cb8fe60abe151b": "20553",
+                "ItemFormula": null,
+                "ShippingAddressFormula": null,
+                "___FK_db337767630e49980abf5c8f": null,
+                "CreatorName": null,
+                "CreatorTitle": null,
+                "StatusFormula": null
+            }
+        ],
+        "OpenItemsSet": [
+            {
+                "ID": "10",
+                "Item": null,
+                "Quantity": null,
+                "RequestedDate": null,
+                "PromisedDate": null,
+                "ShippedDate": null,
+                "___FK_afdd5a22e5d4ac150abe2a4b": null
+            }
+        ],
+        "InProcessItemsSet": [
+            {
+                "ID": "10",
+                "Item": null,
+                "Quantity": null,
+                "RequestedDate": null,
+                "PromisedDate": null,
+                "ShippedDate": null,
+                "___FK_1adf70c9776f9f510abe2b16": null
+            }
+        ],
+        "ShippedItemsSet": [
+            {
+                "ID": "10",
+                "Item": null,
+                "Quantity": null,
+                "RequestedDate": null,
+                "PromisedDate": null,
+                "ShippedDate": null,
+                "___FK_67abda0632bc996e0abe2b65": null
+            }
+        ],
+        "SalesOrderCreatorSet": [
+            {
+                "ID": "10",
+                "FullName": "Matthew Black",
+                "Title": "Sales Order Creator",
+                "Email": "matthew.black@mail.c1.com",
+                "Mobile": null,
+                "CompanyName": "IDES US",
+                "CompanyAddress": "47"
+            }
+        ]
+    }
+}

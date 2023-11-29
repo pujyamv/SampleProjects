@@ -1,0 +1,20 @@
+<mvc:View xmlns:control="sap.gantt.control" xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="pujyamv.controller.view1">
+          
+<Page title="Screen1">
+
+<!--<Button text="Go to Screen2"   press="onNext"></Button>-->
+<headerContent>
+<Button icon="sap-icon://forward" tooltip="NextScreen" press="onNext"></Button>
+</headerContent>
+
+
+
+
+
+
+</Page>
+
+
+</mvc:View>

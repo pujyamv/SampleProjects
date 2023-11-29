@@ -1,0 +1,51 @@
+{
+
+"Studentrecords":[   { 
+                    "StudentID" :"ID001",
+                    "StudentName" :"Ravikumar",
+                    "Branch":"ECE",
+                    "College" :"Pragati Engineering college",
+                    "Campusplaced" : true,
+                    "City" :"Kakinada"
+                     },
+                  {  
+                  "StudentID" :"ID002",
+                  "StudentName" :"Rajesh",
+                  "Branch":"ECE",
+                  "College" :"Pragati Engineering college",
+                  "Campusplaced" : false,
+                  "City" :"Kakinada"
+                   },
+                  {    
+                  "StudentID" :"ID003",
+                  "StudentName" :"Siva",
+                  "Branch":"EEE",
+                  "College" :"Pragati Engineering college",
+                  "Campusplaced" : true,
+                  "City" :"Kakinada"
+                 },
+                  {     
+                  "StudentID" :"ID004",
+                  "StudentName" :"Ramu",
+                  "Branch":"MECH",
+                  "College" :"Pragati Engineering college",
+                  "Campusplaced" : true,
+                  "City" :"Kakinada" 
+                   },
+                  {    
+                  "StudentID" :"ID005",
+                  "StudentName" :"Prasad",
+                  "Branch":"MECH",
+                  "College" :"Pragati Engineering college",
+                  "Campusplaced" : false,
+                  "City" :"Kakinada" 
+                  } 
+                
+                ]
+
+
+
+
+
+
+}

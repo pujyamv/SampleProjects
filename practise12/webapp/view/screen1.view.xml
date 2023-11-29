@@ -1,0 +1,29 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="pujyamv.controller.screen1">
+
+<Page title="Screen1">
+<headerContent>
+<Button icon="sap-icon://forward" tooltip="NextScreen" press="onNext"></Button>
+</headerContent>
+<SearchField  search="onSearch"></SearchField>
+<List id="idListData" items="{path:'/Fruits',
+                               sorter:{
+                                path :'name'
+                               }}" mode="Delete"
+                                   delete="onDelete">
+<items>
+<ObjectListItem 
+               title="{name}"
+               intro="{type}"
+               number="{price}"
+               numberUnit="{unit}"
+               icon="{image}">
+
+</ObjectListItem>
+</items>
+
+</List>
+</Page>
+
+</mvc:View>

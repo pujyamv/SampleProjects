@@ -1,0 +1,25 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="home.controller.screen1">
+
+
+<form:SimpleForm  editable="true">
+
+<Label  text="StudentID"></Label>
+<Input id="idsid" width="50%"></Input>
+<Label text="StudentName"></Label>
+<Input id="idsnm" width="50%"></Input>
+<Label text="Branch"></Label>
+<Input id="idbrn" width="50%"></Input>
+<Label text="College"></Label>
+<Input id="idclg" width="50%"></Input>
+<Label text="City"></Label>
+<Input id="idcty" width="50%"></Input>
+
+</form:SimpleForm>
+
+<Button text="DisplayDetails" press="onClick"></Button>
+<Button text="ClearData" press="onClear"></Button>
+
+
+</mvc:View>

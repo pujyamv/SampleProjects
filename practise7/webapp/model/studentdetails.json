@@ -1,0 +1,64 @@
+{
+
+"Studentdetails":{
+
+ "StudentID"   :"09A31A04B3",
+ "StudentName" :"Phanikumar",
+ "Branch"      :"ECE",
+ "College"     :"Pragati Engineering college",
+ "City"        : "Kakinada",
+ "Marks"       :900
+
+},
+
+"Studentdetailstab":[
+                    
+                     { 
+                        "StudentID"   :"09A31A04B4",
+                        "StudentName" :"Manikanta",
+                        "Branch"      :"ECE",
+                        "College"     :"Pragati Engineering college",
+                        "City"        : "Kakinada",
+                        "Marks"       :900 
+                     },
+                     { 
+                        "StudentID"   :"09A31A04B5",
+                        "StudentName" :"Naresh",
+                        "Branch"      :"ECE",
+                        "College"     :"Pragati Engineering college",
+                        "City"        : "Kakinada",
+                        "Marks"       :950 
+                    }, 
+
+
+                     {  
+                        "StudentID"   :"09A31A04B6",
+                        "StudentName" :"Prasad",
+                        "Branch"      :"ECE",
+                        "College"     :"Pragati Engineering college",
+                        "City"        : "Kakinada",
+                        "Marks"       :960 
+                    },
+
+                     {  
+                        "StudentID"   :"09A31A04B7",
+                        "StudentName" :"Lokesh",
+                        "Branch"      :"ECE",
+                        "College"     :"Pragati Engineering college",
+                        "City"        : "Kakinada",
+                        "Marks"       :970
+                    },
+
+
+                     {  
+                        "StudentID"   :"09A31A04B8",
+                        "StudentName" :"Sandeep",
+                        "Branch"      :"ECE",
+                        "College"     :"Pragati Engineering college",
+                        "City"        : "Kakinada",
+                        "Marks"       :980
+                     } 
+                    
+                    
+                    ]
+}

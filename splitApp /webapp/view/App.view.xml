@@ -1,0 +1,8 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="pujyamv.controller.App">
+
+<SplitApp id="idAppcon"></SplitApp >
+
+
+</mvc:View>

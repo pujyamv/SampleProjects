@@ -1,0 +1,146 @@
+<mvc:View xmlns:table="sap.ui.table" xmlns:core="sap.ui.core" 
+        xmlns:form="sap.ui.layout.form"  
+        xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="home.controller.screen1" >
+
+
+<form:SimpleForm >
+
+<core:Title text="Student Details" icon="sap-icon://study-leave"></core:Title>
+
+<Label text="StudentID"></Label>
+<Input id="idsid" width="50%"  ></Input>
+
+<Label text="StudentName"></Label>
+<Input id="idsnm" width="50%" ></Input>
+
+<Label text="Branch"></Label>
+<Input id="idsbrn" width="50%" ></Input>
+
+
+<Label text="College"></Label>
+<Input id="idsclg" width="50%" ></Input>
+
+
+<Label text="City"></Label>
+<Input id="idscty" width="50%" ></Input>
+
+
+<Label text="Marks"></Label>
+<Input id="idmrks" width="50%" ></Input>
+
+<Label text="Results"></Label>
+<Input id="idrst" width="50%" value="{=${/Studentdetails/Marks} > 910 ? 'Pass' : 'Fail' }"></Input>
+
+</form:SimpleForm>
+
+
+<form:SimpleForm  id="idform1">
+
+<core:Title text="Student Details from Table" ></core:Title>
+
+<Label text="StudentID"></Label>
+<Input id="idsid1" width="50%" value="{StudentID}" ></Input>
+
+<Label text="StudentName"></Label>
+<Input id="idsnm1" width="50%" value="{StudentName}" ></Input>
+
+<Label text="Branch"></Label>
+<Input id="idsbrn1" width="50%" value="{Branch}" ></Input>
+
+
+<Label text="College"></Label>
+<Input id="idsclg1" width="50%" value="{College}" ></Input>
+
+
+<Label text="City"></Label>
+<Input id="idscty1" width="50%" value="{City}" ></Input>
+
+
+<Label text="Marks"></Label>
+<Input id="idmrks1" width="50%" value="{Marks}" ></Input>
+
+<!--<Label text="Results"></Label>
+<Input id="idrst1" width="50%" value="{=${Marks} > 910 ? 'Pass' : 'Fail'}"></Input>-->
+
+</form:SimpleForm>
+
+
+
+
+
+<Button text="DisplayData"  press="onDisplay"></Button>
+<Button text="Clear"  press="onClear"></Button>
+
+
+
+<table:Table rows="{/Studentdetailstab}"  selectionMode="Single"  visibleRowCount="5" 
+rowSelectionChange="onSelectionchange" >
+
+<table:columns>
+<!---1st Column-->
+<table:Column label="StudentID"> 
+<table:template>
+<Text text="{StudentID}"></Text>
+</table:template>
+</table:Column> 
+
+
+<!---2nd Column-->
+<table:Column label="StudentName" > 
+<table:template>
+<Text text="{StudentName}"></Text>
+</table:template>
+</table:Column> 
+
+
+<!---3rd Column-->
+<table:Column label="Branch" > 
+<table:template>
+<Text text="{Branch}"></Text>
+</table:template>
+</table:Column> 
+
+
+<!---4th Column-->
+<table:Column label="College" > 
+<table:template>
+<Text text="{College}"></Text>
+</table:template>
+</table:Column> 
+
+<!---5th Column-->
+<table:Column label="City" > 
+<table:template>
+<Text text="{City}"></Text>
+</table:template>
+</table:Column> 
+
+
+<!---6th Column-->
+<table:Column label="Marks" > 
+<table:template>
+<Text text="{Marks}"></Text>
+</table:template>
+</table:Column> 
+
+<!---7th Column-->
+<table:Column label="Result" > 
+<table:template>
+<Text text="{=${Marks} > 910 ? 'Pass' : 'Fail'}"></Text>
+</table:template>
+</table:Column> 
+
+
+
+</table:columns>
+
+
+
+
+
+</table:Table>
+
+
+</mvc:View>

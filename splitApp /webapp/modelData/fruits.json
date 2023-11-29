@@ -1,0 +1,338 @@
+{
+    "Fruits": [
+        {
+            "name": "Mango",
+            "color": "Yellow",
+            "type": "sweet",
+            "image": "images/mango.png",
+            "price": "40",
+            "unit": "kg",
+            "availability": "noStock"
+        },
+        {
+            "name": "Apple",
+            "color": "Red",
+            "type": "sweet",
+            "image": "images/Apple.png",
+            "price": "60",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Banana",
+            "color": "Yellow",
+            "type": "sweet",
+            "image": "images/banana.png",
+            "price": "50",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Lemon",
+            "color": "Yellow",
+            "type": "sour",
+            "image": "images/lemon.png",
+            "price": "20",
+            "unit": "kg",
+            "availability": "NoStock"
+        },
+        {
+            "name": "Peach",
+            "color": "Red",
+            "type": "sweet",
+            "image": "images/peach.png",
+            "price": "100",
+            "unit": "kg",
+            "availability": "GoingtoComplete"
+        },
+        {
+            "name": "Cherry",
+            "color": "Red",
+            "type": "sour",
+            "image": "images/cherry.png",
+            "price": "100",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Avocado",
+            "color": "green",
+            "type": "sour",
+            "image": "images/Avacado.png",
+            "price": 150,
+            "unit": "kg",
+            "availability": "NoStock"
+        },
+        {
+            "name": "Raspberry",
+            "color": "Red",
+            "type": "sour",
+            "image": "images/Raspberry.png",
+            "price": "400",
+            "unit": "kg",
+            "availability": "GoingtoComplete"
+        },
+        {
+            "name": "Apricots",
+            "color": "Red",
+            "type": "sweet",
+            "image": "images/Apricot.png",
+            "price": "500",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Watermillon",
+            "color": "Red",
+            "type": "sweet",
+            "image": "images/watermillon.png",
+            "price": "50",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Quince",
+            "color": "Yellow",
+            "type": "sweet",
+            "image": "images/Quince.png",
+            "price": "400",
+            "unit": "kg",
+            "availability": "NoStock"
+        },
+        {
+            "name": "Strawberry",
+            "color": "Red",
+            "type": "sour",
+            "image": "images/strawberry.png",
+            "price": "700",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Pomegranate",
+            "color": "Red",
+            "type": "sweet",
+            "image": "images/Pomegranate.png",
+            "price": "400",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Starfruit",
+            "color": "Yellow",
+            "type": "sour",
+            "image": "images/StarFruit.png",
+            "price": "600",
+            "unit": "kg",
+            "availability": "GoingtoComplete"
+        },
+        {
+            "name": "Muskmillon",
+            "color": "White",
+            "type": "sweet",
+            "image": "images/Muskmillon.png",
+            "price": "50",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Kiwi",
+            "color": "Green",
+            "type": "sour",
+            "image": "images/Kiwiimages.png",
+            "price": "500",
+            "unit": "kg",
+            "availability": "GoingtoComplete"
+        },
+        {
+            "name": "Grape",
+            "color": "Red",
+            "type": "sour",
+            "image": "images/grapes.png",
+            "price": "500",
+            "unit": "kg",
+            "availability": "NoStock"
+        },
+        {
+            "name": "Orange",
+            "color": "Yellow",
+            "type": "sweet",
+            "image": "images/oranges.png",
+            "price": "200",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Plum",
+            "color": "Red",
+            "type": "sweet",
+            "image": "images/Plum.png",
+            "price": "300",
+            "unit": "kg",
+            "availability": "Stock"
+        },
+        {
+            "name": "Papaya",
+            "color": "Green",
+            "type": "sweet",
+            "image": "images/papaya.png",
+            "price": "100",
+            "unit": "kg",
+            "availability": "GoingtoComplete"
+        }
+    ],
+    "Suppliers": [
+        {
+            "name": "Abhi",
+            "contactPerson": "Ravi",
+            "city": "Hyderabad",
+            "sinceWhen": 1991,
+            "state": "Telangana",
+            "phone no": 123456789,
+            "sellingFruits": "[Apple,Mango,Kiwi]"
+        },
+        {
+            "name": "Akshay",
+            "contactPerson": "Raju",
+            "city": "Hyderabad",
+            "sinceWhen": 1992,
+            "state": "Telangana",
+            "phone no": 789435670,
+            "sellingFruits": "[Apple,Mango,Pineapple]"
+        },
+        {
+            "name": "Anudeep",
+            "contactPerson": "Ram",
+            "city": "Pune",
+            "sinceWhen": 1993,
+            "state": "Karnataka",
+            "phone no": 678945321,
+            "sellingFruits": "[Apple,Mango,Avacado]"
+        },
+        {
+            "name": "Aman",
+            "contactPerson": "Rajesh",
+            "city": "Hyderabad",
+            "sinceWhen": 1994,
+            "state": "Telangana",
+            "phone no": 196784532,
+            "sellingFruits": "[Apple,Mango,Pineapple]"
+        },
+        {
+            "name": "Balu",
+            "contactPerson": "Rahul",
+            "city": "Khammam",
+            "sinceWhen": 1995,
+            "state": "AndhraPradesh",
+            "phone no": 1213214567,
+            "sellingFruits": "[Apple,Mango,lemon]"
+        },
+        {
+            "name": "Gopal",
+            "contactPerson": "Gopi",
+            "city": "Bapatla",
+            "sinceWhen": 1996,
+            "state": "AndhraPradesh",
+            "phone no": 432215678,
+            "sellingFruits": "[Apple,Mango,Orange]"
+        },
+        {
+            "name": "Gowtham",
+            "contactPerson": "Ram",
+            "city": "Hyderabad",
+            "sinceWhen": 1997,
+            "state": "Telangana",
+            "phone no": 678543123,
+            "sellingFruits": "[Apple,Mango,Kiwi]"
+        },
+        {
+            "name": "Sunny",
+            "contactPerson": "Sandeep",
+            "city": "Hyderabad",
+            "sinceWhen": 1992,
+            "state": "Telangana",
+            "phone no": 123456789,
+            "sellingFruits": "[Apple,Mango,Orange]"
+        },
+        {
+            "name": "Ankith",
+            "contactPerson": "Akash",
+            "city": "Tirupathi",
+            "sinceWhen": 1993,
+            "state": "AndhraPradesh",
+            "phone no": 456789123,
+            "sellingFruits": "[Apple,Mango,Banana]"
+        },
+        {
+            "name": "Pradeep",
+            "contactPerson": "Prasanth",
+            "city": "Hyderabad",
+            "sinceWhen": 1993,
+            "state": "Telangana",
+            "phone no": 1456789101,
+            "sellingFruits": "[Apple,Mango,Pineapple,Lichi]"
+        }
+    ],
+    "Cities": [
+        {
+            "CityName": "Hyderabad",
+            "State": "Telangana",
+            "Famous for": "BirlaTemple",
+            "Populations": 300000
+        },
+        {
+            "CityName": "KareemNagar",
+            "State": "Telangana",
+            "Famous for": "Biriyani",
+            "Populations": 400000
+        },
+        {
+            "CityName": "Bapatla",
+            "State": "AndhraPradesh",
+            "Famous for": "SuryaLankaBeach",
+            "Populations": 500000
+        },
+        {
+            "CityName": "Tirupathi",
+            "State": "AndhraPradesh",
+            "Famous for": "BalajiTemple",
+            "Populations": 600000
+        },
+        {
+            "CityName": "Ponnur",
+            "State": "AndhraPradesh",
+            "Famous for": "AnjaneyaTemple",
+            "Populations": 400000
+        },
+        {
+            "CityName": "Srisilam",
+            "State": "AndhraPradesh",
+            "Famous for": "MallikarjunaTemple",
+            "Populations": 200000
+        },
+        {
+            "CityName": "Tenali",
+            "State": "AndhraPradesh",
+            "Famous for": "Gold",
+            "Populations": 400000
+        },
+        {
+            "CityName": "Kakinada",
+            "State": "AndhraPradesh",
+            "Famous for": "KajaSweet",
+            "Populations": 300000
+        },
+        {
+            "CityName": "Cheerala",
+            "State": "AndhraPradesh",
+            "Famous for": "Sarees",
+            "Populations": 400000
+        },
+        {
+            "CityName": "Khirthabadh",
+            "State": "Telangana",
+            "Famous for": "LordGanesh",
+            "Populations": 900000
+        }
+    ]
+}

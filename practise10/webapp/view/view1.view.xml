@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="pujyamv.controller.view1">
+
+<Page title="Screen1" >
+
+
+<headerContent>
+
+<Button icon="sap-icon://forward" tooltip="NextScreen" press="onNext"></Button>
+
+</headerContent>
+
+
+
+</Page>
+
+
+</mvc:View>

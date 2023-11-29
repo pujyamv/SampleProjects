@@ -1,0 +1,28 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="pujyamv.controller.screen2">
+
+<Page title="Screen2" showNavButton="true" navButtonTooltip="Back"
+navButtonPress="onBack">
+
+<ObjectHeader title="{name}"
+              intro="{type}"
+              number="{price}"
+              numberUnit="{unit}" 
+              icon="{image}">
+
+<statuses>
+<ObjectStatus 
+ text="{availability}"
+ state="{ 
+         path:'availability',
+         formatter:'.oFormatter.getStatus'
+         }"
+></ObjectStatus>
+</statuses>
+
+</ObjectHeader>
+
+</Page >
+
+</mvc:View>

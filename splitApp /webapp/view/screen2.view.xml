@@ -1,0 +1,105 @@
+<mvc:View
+    xmlns:form="sap.ui.layout.form"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="pujyamv.controller.screen2"
+>
+    <Page
+        title="Screen2"
+        showNavButton="true"
+        navButtonTooltip="Back"
+        navButtonPress="onBack"
+    >
+        <ObjectHeader
+            title="{name}"
+            intro="{type}"
+            number="{price}"
+            numberUnit="{unit}"
+            icon="{image}"
+        >
+            <statuses>
+                <ObjectStatus
+                    text="{availability}"
+                    state="{ 
+         path:'availability',
+         formatter:'.oFormatter.getStatus'
+         }"
+                />
+            </statuses>
+        </ObjectHeader>
+
+        <!-- Detailed Item Information -->
+
+        <IconTabBar>
+            <items>
+                <IconTabFilter
+                    icon="sap-icon://product"
+                    iconColor="Positive"
+                    text="Product Details"
+                >
+                    <content>
+                        <form:SimpleForm>
+                            <Label text="Name" />
+                            <Text text="{name}" />
+                            <Label text="Type" />
+                            <Text text="{type}" />
+                            <Label text="Color" />
+                            <Text text="{color}" />
+                            <Label text="Stock" />
+                            <Text text="{price} {unit}" />
+                        </form:SimpleForm>
+                    </content>
+                </IconTabFilter>
+                <IconTabFilter
+                    icon="sap-icon://supplier"
+                    iconColor="Critical"
+                >
+                    <Table
+                        id="idTable"
+                        items="{/Suppliers}"
+                    >
+                        <columns>
+                            <Column>
+                                <header>
+                                    <Label text="Name of supplier" />
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Label text="Contact Person" />
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Label text="City" />
+                                </header>
+                            </Column>
+                            <Column>
+                                <header>
+                                    <Label text="Establised year" />
+                                </header>
+                            </Column>
+                        </columns>
+
+                        <items>
+                        <ColumnListItem >
+                        <cells>
+                        <Text  text="{name}"></Text>
+                        <Text  text="{contactPerson}"></Text>
+                        <Text  text="{city}"></Text>
+                        <Text  text="{sinceWhen}"></Text>
+                        </cells>
+                        
+                        </ColumnListItem>
+                        
+                        </items>
+                    </Table>
+                </IconTabFilter>
+                <IconTabFilter
+                    icon="sap-icon://home"
+                    iconColor="Marker"
+                />
+            </items>
+        </IconTabBar>
+    </Page>
+</mvc:View>

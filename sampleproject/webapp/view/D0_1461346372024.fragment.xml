@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.changeShippingAddress.controller.D0_1461346372024" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+    <Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="false" title="Shipping Address" type="Standard" verticalScrolling="true">
+        <content>
+            <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="true" visible="true">
+                <form:content>
+                    <Label text="Street" design="Standard" width="auto" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                    <Input value="{ShippingAddress1}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                    <Label text="City, State, Zip" design="Standard" width="auto" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                    <Input value="{ShippingAddress2}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                    <Label text="Phone" design="Standard" width="auto" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                    <Input value="{ShippingAddress3}" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                </form:content>
+                <form:title/>
+            </form:SimpleForm>
+        </content>
+        <beginButton/>
+        <buttons>
+            <Button text="Save" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+            <Button text="Cancel" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress1"/>
+        </buttons>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </Dialog>
+</core:FragmentDefinition>

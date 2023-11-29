@@ -1,0 +1,16 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+          xmlns="sap.m"
+          controllerName="pujyamv.controller.view2">
+          
+
+<Page title="Screen2" showNavButton="true" navButtonPress="onBack">
+<content>
+<!--<Button text="Go to Screen1"   press="onBack"></Button>-->
+
+</content>
+
+
+
+</Page>
+
+</mvc:View>

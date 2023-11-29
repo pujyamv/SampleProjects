@@ -1,0 +1,251 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="f2689f5c7e8052861a0cd8fd" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="f2689f5c7e8052861a0cd8fd_Entities" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="MasterListSet" EntityType="f2689f5c7e8052861a0cd8fd.MasterList" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="MasterListSOItemsSOItems" Association="f2689f5c7e8052861a0cd8fd.MasterListSOItemsSOItems" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="MasterListSet" Role="FromRole_MasterListSOItemsSOItems"/>
+                    <End EntitySet="SOItemsSet" Role="ToRole_MasterListSOItemsSOItems"/>
+                </AssociationSet>
+                <AssociationSet Name="MasterListOpenItemsOpenItems" Association="f2689f5c7e8052861a0cd8fd.MasterListOpenItemsOpenItems" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="MasterListSet" Role="FromRole_MasterListOpenItemsOpenItems"/>
+                    <End EntitySet="OpenItemsSet" Role="ToRole_MasterListOpenItemsOpenItems"/>
+                </AssociationSet>
+                <AssociationSet Name="MasterListInProcessItemsInProcessItems" Association="f2689f5c7e8052861a0cd8fd.MasterListInProcessItemsInProcessItems" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="MasterListSet" Role="FromRole_MasterListInProcessItemsInProcessItems"/>
+                    <End EntitySet="InProcessItemsSet" Role="ToRole_MasterListInProcessItemsInProcessItems"/>
+                </AssociationSet>
+                <AssociationSet Name="MasterListShippedItemsShippedItems" Association="f2689f5c7e8052861a0cd8fd.MasterListShippedItemsShippedItems" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="MasterListSet" Role="FromRole_MasterListShippedItemsShippedItems"/>
+                    <End EntitySet="ShippedItemsSet" Role="ToRole_MasterListShippedItemsShippedItems"/>
+                </AssociationSet>
+                <EntitySet Name="SOItemsSet" EntityType="f2689f5c7e8052861a0cd8fd.SOItems" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <AssociationSet Name="SOItemsItemDetailsDeliverySchedules" Association="f2689f5c7e8052861a0cd8fd.SOItemsItemDetailsDeliverySchedules" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="SOItemsSet" Role="FromRole_SOItemsItemDetailsDeliverySchedules"/>
+                    <End EntitySet="DeliverySchedulesSet" Role="ToRole_SOItemsItemDetailsDeliverySchedules"/>
+                </AssociationSet>
+                <AssociationSet Name="SOItemsSalesOrderCreatorSetSalesOrderCreator" Association="f2689f5c7e8052861a0cd8fd.SOItemsSalesOrderCreatorSetSalesOrderCreator" sap:creatable="true" sap:updatable="true" sap:deletable="true">
+                    <End EntitySet="SOItemsSet" Role="FromRole_SOItemsSalesOrderCreatorSetSalesOrderCreator"/>
+                    <End EntitySet="SalesOrderCreatorSet" Role="ToRole_SOItemsSalesOrderCreatorSetSalesOrderCreator"/>
+                </AssociationSet>
+                <EntitySet Name="OpenItemsSet" EntityType="f2689f5c7e8052861a0cd8fd.OpenItems" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="InProcessItemsSet" EntityType="f2689f5c7e8052861a0cd8fd.InProcessItems" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="ShippedItemsSet" EntityType="f2689f5c7e8052861a0cd8fd.ShippedItems" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="DeliverySchedulesSet" EntityType="f2689f5c7e8052861a0cd8fd.DeliverySchedules" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+                <EntitySet Name="SalesOrderCreatorSet" EntityType="f2689f5c7e8052861a0cd8fd.SalesOrderCreator" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+            </EntityContainer>
+            <EntityType Name="MasterList">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="ShippingStatusCode" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippingStatusCode"/>
+                <Property Name="DistributionChannel" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="DistributionChannel"/>
+                <Property Name="Division" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Division"/>
+                <Property Name="OverallStatusCode" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="OverallStatusCode"/>
+                <Property Name="ShipToPostalCode" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShipToPostalCode"/>
+                <Property Name="ShipToRegion" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShipToRegion"/>
+                <Property Name="ShipToCountry" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShipToCountry"/>
+                <Property Name="PO" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PO"/>
+                <Property Name="TotalAmount" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalAmount"/>
+                <Property Name="TotalAmountFormatted" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalAmountFormatted"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="Status" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Status"/>
+                <Property Name="ShipToPartyName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShipToPartyName"/>
+                <Property Name="OrderDate" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="OrderDate"/>
+                <Property Name="OrderDateFormatted" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="OrderDateFormatted"/>
+                <Property Name="RequestedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="RequestedDate"/>
+                <Property Name="ShipToContact" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShipToContact"/>
+                <Property Name="ShipToAddressLine1" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShipToAddressLine1"/>
+                <Property Name="ShipToAddressLine2" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShipToAddressLine2"/>
+                <Property Name="ShipToAddressLine3" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShipToAddressLine3"/>
+                <Property Name="TotalSchedulesCount" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TotalSchedulesCount"/>
+                <Property Name="OpenSchedulesCount" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="OpenSchedulesCount"/>
+                <Property Name="InProcessSchedulesCount" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="InProcessSchedulesCount"/>
+                <Property Name="ShippedSchedulesCount" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippedSchedulesCount"/>
+                <Property Name="OrderItemsCount" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="OrderItemsCount"/>
+                <Property Name="PaymentTerms" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PaymentTerms"/>
+                <Property Name="NetPriceAmount" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="NetPriceAmount"/>
+                <Property Name="TaxAmount" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TaxAmount"/>
+                <Property Name="ShipToCity" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShipToCity"/>
+                <Property Name="CustomerID" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CustomerID"/>
+                <Property Name="SalesOrganization" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="SalesOrganization"/>
+                <Property Name="CustomerName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CustomerName"/>
+                <Property Name="SOHeaderFormula" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;SO \&quot;,\&quot;id\&quot;:1}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;MasterList\&quot;,\&quot;entityId\&quot;:\&quot;MasterList\&quot;,\&quot;navPropName\&quot;:\&quot;MasterList\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;ID\&quot;,\&quot;propertyId\&quot;:\&quot;ID\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:2}],\&quot;id\&quot;:0}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;MasterList&quot;,&quot;propertyId&quot;:&quot;ID&quot;}]}" sap:label="SOHeader"/>
+                <Property Name="StatusFormula" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;IF\&quot;,\&quot;name\&quot;:\&quot;if\&quot;,\&quot;type\&quot;:\&quot;condition\&quot;,\&quot;condition\&quot;:[{\&quot;label\&quot;:\&quot;=\&quot;,\&quot;name\&quot;:\&quot;equals\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;MasterList\&quot;,\&quot;entityId\&quot;:\&quot;MasterList\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;OverallStatusCode\&quot;,\&quot;propertyId\&quot;:\&quot;OverallStatusCode\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:2}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;OP\&quot;,\&quot;id\&quot;:3}],\&quot;id\&quot;:1}],\&quot;then\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;Open\&quot;,\&quot;id\&quot;:4}],\&quot;else\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;In Process\&quot;,\&quot;id\&quot;:5}],\&quot;id\&quot;:0}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;MasterList&quot;,&quot;propertyId&quot;:&quot;OverallStatusCode&quot;}]}" sap:label="StatusFormula"/>
+                <Property Name="POFormula" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;IF\&quot;,\&quot;name\&quot;:\&quot;if\&quot;,\&quot;type\&quot;:\&quot;condition\&quot;,\&quot;condition\&quot;:[{\&quot;label\&quot;:\&quot;=\&quot;,\&quot;name\&quot;:\&quot;equals\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;MasterList\&quot;,\&quot;entityId\&quot;:\&quot;MasterList\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;PO\&quot;,\&quot;propertyId\&quot;:\&quot;PO\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:2}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:null,\&quot;id\&quot;:3}],\&quot;id\&quot;:1}],\&quot;then\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;PO n/a\&quot;,\&quot;id\&quot;:4}],\&quot;else\&quot;:[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;PO \&quot;,\&quot;id\&quot;:6}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;MasterList\&quot;,\&quot;entityId\&quot;:\&quot;MasterList\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;PO\&quot;,\&quot;propertyId\&quot;:\&quot;PO\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:7}],\&quot;id\&quot;:5}],\&quot;id\&quot;:0}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;MasterList&quot;,&quot;propertyId&quot;:&quot;PO&quot;},{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;MasterList&quot;,&quot;propertyId&quot;:&quot;PO&quot;}]}" sap:label="POFormula"/>
+                <Property Name="OrderedFormula" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;Ordered \&quot;,\&quot;id\&quot;:1}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;MasterList\&quot;,\&quot;entityId\&quot;:\&quot;MasterList\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;OrderDateFormatted\&quot;,\&quot;propertyId\&quot;:\&quot;OrderDateFormatted\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:2}],\&quot;id\&quot;:0}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;MasterList&quot;,&quot;propertyId&quot;:&quot;OrderDateFormatted&quot;}]}" sap:label="OrderedFormula"/>
+                <Property Name="TotalFormula" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;Total \&quot;,\&quot;id\&quot;:2}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;MasterList\&quot;,\&quot;entityId\&quot;:\&quot;MasterList\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;TotalAmount\&quot;,\&quot;propertyId\&quot;:\&quot;TotalAmount\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:3}],\&quot;id\&quot;:1}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot; USD\&quot;,\&quot;id\&quot;:4}],\&quot;id\&quot;:0}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;MasterList&quot;,&quot;propertyId&quot;:&quot;TotalAmount&quot;}]}" sap:label="TotalFormula"/>
+                <Property Name="CreatorName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CreatorName"/>
+                <Property Name="CreatorTitle" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CreatorTitle"/>
+                <Property Name="NbItems" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;Items(\&quot;,\&quot;isNewLine\&quot;:false,\&quot;id\&quot;:0,\&quot;computedType\&quot;:\&quot;string\&quot;}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;SOItems\&quot;,\&quot;entityId\&quot;:\&quot;SOItems\&quot;,\&quot;navPropName\&quot;:\&quot;SOItems\&quot;,\&quot;navPropId\&quot;:\&quot;SOItems\&quot;,\&quot;navPropMultiplicity\&quot;:true,\&quot;navPropOp\&quot;:\&quot;count\&quot;,\&quot;propertyName\&quot;:\&quot;ID\&quot;,\&quot;propertyId\&quot;:\&quot;ID\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;propertyType\&quot;:\&quot;String\&quot;,\&quot;isNewLine\&quot;:true,\&quot;id\&quot;:2,\&quot;computedType\&quot;:\&quot;number\&quot;}],\&quot;isNewLine\&quot;:true,\&quot;id\&quot;:1,\&quot;computedType\&quot;:\&quot;string\&quot;}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;)\&quot;,\&quot;isNewLine\&quot;:false,\&quot;id\&quot;:4,\&quot;computedType\&quot;:\&quot;string\&quot;}],\&quot;isNewLine\&quot;:false,\&quot;id\&quot;:3,\&quot;computedType\&quot;:\&quot;string\&quot;}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;SOItems&quot;,&quot;entityId&quot;:&quot;SOItems&quot;,&quot;propertyId&quot;:&quot;ID&quot;}]}" sap:label="NbItems"/>
+                <NavigationProperty Name="SOItems" Relationship="f2689f5c7e8052861a0cd8fd.MasterListSOItemsSOItems" FromRole="FromRole_MasterListSOItemsSOItems" ToRole="ToRole_MasterListSOItemsSOItems"/>
+                <NavigationProperty Name="OpenItems" Relationship="f2689f5c7e8052861a0cd8fd.MasterListOpenItemsOpenItems" FromRole="FromRole_MasterListOpenItemsOpenItems" ToRole="ToRole_MasterListOpenItemsOpenItems"/>
+                <NavigationProperty Name="InProcessItems" Relationship="f2689f5c7e8052861a0cd8fd.MasterListInProcessItemsInProcessItems" FromRole="FromRole_MasterListInProcessItemsInProcessItems" ToRole="ToRole_MasterListInProcessItemsInProcessItems"/>
+                <NavigationProperty Name="ShippedItems" Relationship="f2689f5c7e8052861a0cd8fd.MasterListShippedItemsShippedItems" FromRole="FromRole_MasterListShippedItemsShippedItems" ToRole="ToRole_MasterListShippedItemsShippedItems"/>
+            </EntityType>
+            <Association Name="MasterListSOItemsSOItems">
+                <End Type="f2689f5c7e8052861a0cd8fd.MasterList" Multiplicity="1" Role="FromRole_MasterListSOItemsSOItems"/>
+                <End Type="f2689f5c7e8052861a0cd8fd.SOItems" Multiplicity="*" Role="ToRole_MasterListSOItemsSOItems"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_MasterListSOItemsSOItems">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_MasterListSOItemsSOItems">
+                        <PropertyRef Name="___FK_175bc61249cb8fe60abe151b"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="MasterListOpenItemsOpenItems">
+                <End Type="f2689f5c7e8052861a0cd8fd.MasterList" Multiplicity="1" Role="FromRole_MasterListOpenItemsOpenItems"/>
+                <End Type="f2689f5c7e8052861a0cd8fd.OpenItems" Multiplicity="*" Role="ToRole_MasterListOpenItemsOpenItems"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_MasterListOpenItemsOpenItems">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_MasterListOpenItemsOpenItems">
+                        <PropertyRef Name="___FK_afdd5a22e5d4ac150abe2a4b"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="MasterListInProcessItemsInProcessItems">
+                <End Type="f2689f5c7e8052861a0cd8fd.MasterList" Multiplicity="1" Role="FromRole_MasterListInProcessItemsInProcessItems"/>
+                <End Type="f2689f5c7e8052861a0cd8fd.InProcessItems" Multiplicity="*" Role="ToRole_MasterListInProcessItemsInProcessItems"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_MasterListInProcessItemsInProcessItems">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_MasterListInProcessItemsInProcessItems">
+                        <PropertyRef Name="___FK_1adf70c9776f9f510abe2b16"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="MasterListShippedItemsShippedItems">
+                <End Type="f2689f5c7e8052861a0cd8fd.MasterList" Multiplicity="1" Role="FromRole_MasterListShippedItemsShippedItems"/>
+                <End Type="f2689f5c7e8052861a0cd8fd.ShippedItems" Multiplicity="*" Role="ToRole_MasterListShippedItemsShippedItems"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_MasterListShippedItemsShippedItems">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_MasterListShippedItemsShippedItems">
+                        <PropertyRef Name="___FK_67abda0632bc996e0abe2b65"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="SOItems">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Item" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Item"/>
+                <Property Name="Quantity" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Quantity"/>
+                <Property Name="Price" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Price"/>
+                <Property Name="Currency" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Currency"/>
+                <Property Name="SubTotal" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="SubTotal"/>
+                <Property Name="Status" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Status"/>
+                <Property Name="Percentage" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Percentage"/>
+                <Property Name="MaterialNumber" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="MaterialNumber"/>
+                <Property Name="CustomerMaterialNumber" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CustomerMaterialNumber"/>
+                <Property Name="ShippingAddress1" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippingAddress1"/>
+                <Property Name="ShippingAddress2" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippingAddress2"/>
+                <Property Name="ShippingAddress3" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippingAddress3"/>
+                <Property Name="ShippingCarrier" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippingCarrier"/>
+                <Property Name="Incoterms" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Incoterms"/>
+                <Property Name="SOID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="SOID"/>
+                <Property Name="___FK_175bc61249cb8fe60abe151b" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_175bc61249cb8fe60abe151b"/>
+                <Property Name="ItemFormula" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;SOItems\&quot;,\&quot;entityId\&quot;:\&quot;SOItems\&quot;,\&quot;navPropName\&quot;:\&quot;SOItems\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;ID\&quot;,\&quot;propertyId\&quot;:\&quot;ID\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:1}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot; \&quot;,\&quot;id\&quot;:3}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;SOItems\&quot;,\&quot;entityId\&quot;:\&quot;SOItems\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;Item\&quot;,\&quot;propertyId\&quot;:\&quot;Item\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:4}],\&quot;id\&quot;:2}],\&quot;id\&quot;:0}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;SOItems&quot;,&quot;propertyId&quot;:&quot;ID&quot;},{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;SOItems&quot;,&quot;propertyId&quot;:&quot;Item&quot;}]}" sap:label="ItemFormula"/>
+                <Property Name="ShippingAddressFormula" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;SOItems\&quot;,\&quot;entityId\&quot;:\&quot;SOItems\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;ShippingAddress1\&quot;,\&quot;propertyId\&quot;:\&quot;ShippingAddress1\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:2}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot; \\\\n\&quot;,\&quot;id\&quot;:3}],\&quot;id\&quot;:1}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;SOItems\&quot;,\&quot;entityId\&quot;:\&quot;SOItems\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;ShippingAddress2\&quot;,\&quot;propertyId\&quot;:\&quot;ShippingAddress2\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:5}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;+\&quot;,\&quot;name\&quot;:\&quot;plus\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot; \\\\n\&quot;,\&quot;id\&quot;:7}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;SOItems\&quot;,\&quot;entityId\&quot;:\&quot;SOItems\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;ShippingAddress3\&quot;,\&quot;propertyId\&quot;:\&quot;ShippingAddress3\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:8}],\&quot;id\&quot;:6}],\&quot;id\&quot;:4}],\&quot;id\&quot;:0}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;SOItems&quot;,&quot;propertyId&quot;:&quot;ShippingAddress1&quot;},{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;SOItems&quot;,&quot;propertyId&quot;:&quot;ShippingAddress2&quot;},{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;SOItems&quot;,&quot;propertyId&quot;:&quot;ShippingAddress3&quot;}]}" sap:label="ShippingAddressFormula"/>
+                <Property Name="___FK_db337767630e49980abf5c8f" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_db337767630e49980abf5c8f"/>
+                <Property Name="CreatorName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CreatorName"/>
+                <Property Name="CreatorTitle" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CreatorTitle"/>
+                <Property Name="StatusFormula" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:calculated="{&quot;calculation&quot;:&quot;[{\&quot;label\&quot;:\&quot;IF\&quot;,\&quot;name\&quot;:\&quot;if\&quot;,\&quot;type\&quot;:\&quot;condition\&quot;,\&quot;condition\&quot;:[{\&quot;label\&quot;:\&quot;=\&quot;,\&quot;name\&quot;:\&quot;equals\&quot;,\&quot;type\&quot;:\&quot;operator\&quot;,\&quot;left\&quot;:[{\&quot;label\&quot;:\&quot;PROPERTY\&quot;,\&quot;name\&quot;:\&quot;property\&quot;,\&quot;entityName\&quot;:\&quot;SOItems\&quot;,\&quot;entityId\&quot;:\&quot;SOItems\&quot;,\&quot;navPropName\&quot;:\&quot;\&quot;,\&quot;navPropId\&quot;:\&quot;\&quot;,\&quot;navPropMultiplicity\&quot;:null,\&quot;navPropOp\&quot;:null,\&quot;propertyName\&quot;:\&quot;Status\&quot;,\&quot;propertyId\&quot;:\&quot;Status\&quot;,\&quot;type\&quot;:\&quot;property\&quot;,\&quot;id\&quot;:2}],\&quot;right\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;Open\&quot;,\&quot;id\&quot;:3}],\&quot;id\&quot;:1}],\&quot;then\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;Success\&quot;,\&quot;id\&quot;:4}],\&quot;else\&quot;:[{\&quot;label\&quot;:\&quot;VALUE\&quot;,\&quot;name\&quot;:\&quot;value\&quot;,\&quot;type\&quot;:\&quot;value\&quot;,\&quot;value\&quot;:\&quot;Warning\&quot;,\&quot;id\&quot;:5}],\&quot;id\&quot;:0}]&quot;,&quot;inputProperties&quot;:[{&quot;navPropId&quot;:&quot;&quot;,&quot;entityId&quot;:&quot;SOItems&quot;,&quot;propertyId&quot;:&quot;Status&quot;}]}" sap:label="StatusFormula"/>
+                <NavigationProperty Name="ItemDetails" Relationship="f2689f5c7e8052861a0cd8fd.SOItemsItemDetailsDeliverySchedules" FromRole="FromRole_SOItemsItemDetailsDeliverySchedules" ToRole="ToRole_SOItemsItemDetailsDeliverySchedules"/>
+                <NavigationProperty Name="SalesOrderCreatorSet" Relationship="f2689f5c7e8052861a0cd8fd.SOItemsSalesOrderCreatorSetSalesOrderCreator" FromRole="FromRole_SOItemsSalesOrderCreatorSetSalesOrderCreator" ToRole="ToRole_SOItemsSalesOrderCreatorSetSalesOrderCreator"/>
+            </EntityType>
+            <Association Name="SOItemsItemDetailsDeliverySchedules">
+                <End Type="f2689f5c7e8052861a0cd8fd.SOItems" Multiplicity="1" Role="FromRole_SOItemsItemDetailsDeliverySchedules"/>
+                <End Type="f2689f5c7e8052861a0cd8fd.DeliverySchedules" Multiplicity="*" Role="ToRole_SOItemsItemDetailsDeliverySchedules"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_SOItemsItemDetailsDeliverySchedules">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="ToRole_SOItemsItemDetailsDeliverySchedules">
+                        <PropertyRef Name="___FK_46868c8ffae2bae00abf2a78"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="SOItemsSalesOrderCreatorSetSalesOrderCreator">
+                <End Type="f2689f5c7e8052861a0cd8fd.SOItems" Multiplicity="1" Role="FromRole_SOItemsSalesOrderCreatorSetSalesOrderCreator"/>
+                <End Type="f2689f5c7e8052861a0cd8fd.SalesOrderCreator" Multiplicity="1" Role="ToRole_SOItemsSalesOrderCreatorSetSalesOrderCreator"/>
+                <ReferentialConstraint>
+                    <Principal Role="ToRole_SOItemsSalesOrderCreatorSetSalesOrderCreator">
+                        <PropertyRef Name="ID"/>
+                    </Principal>
+                    <Dependent Role="FromRole_SOItemsSalesOrderCreatorSetSalesOrderCreator">
+                        <PropertyRef Name="___FK_db337767630e49980abf5c8f"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityType Name="OpenItems">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Item" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Item"/>
+                <Property Name="Quantity" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Quantity"/>
+                <Property Name="RequestedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="RequestedDate"/>
+                <Property Name="PromisedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PromisedDate"/>
+                <Property Name="ShippedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippedDate"/>
+                <Property Name="___FK_afdd5a22e5d4ac150abe2a4b" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_afdd5a22e5d4ac150abe2a4b"/>
+            </EntityType>
+            <EntityType Name="InProcessItems">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Item" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Item"/>
+                <Property Name="Quantity" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Quantity"/>
+                <Property Name="RequestedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="RequestedDate"/>
+                <Property Name="PromisedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PromisedDate"/>
+                <Property Name="ShippedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippedDate"/>
+                <Property Name="___FK_1adf70c9776f9f510abe2b16" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_1adf70c9776f9f510abe2b16"/>
+            </EntityType>
+            <EntityType Name="ShippedItems">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Item" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Item"/>
+                <Property Name="Quantity" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Quantity"/>
+                <Property Name="RequestedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="RequestedDate"/>
+                <Property Name="PromisedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PromisedDate"/>
+                <Property Name="ShippedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippedDate"/>
+                <Property Name="___FK_67abda0632bc996e0abe2b65" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_67abda0632bc996e0abe2b65"/>
+            </EntityType>
+            <EntityType Name="DeliverySchedules">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="Quantity" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Title"/>
+                <Property Name="___FK_46868c8ffae2bae00abf2a78" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="___FK_46868c8ffae2bae00abf2a78"/>
+                <Property Name="RequestedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="RequestedDate"/>
+                <Property Name="PromisedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="PromisedDate"/>
+                <Property Name="ShippedDate" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ShippedDate"/>
+                <Property Name="Status" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Status"/>
+            </EntityType>
+            <EntityType Name="SalesOrderCreator">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+                <Property Name="FullName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="FullName"/>
+                <Property Name="Title" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Title"/>
+                <Property Name="Email" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Email"/>
+                <Property Name="Mobile" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Mobile"/>
+                <Property Name="CompanyName" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CompanyName"/>
+                <Property Name="CompanyAddress" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CompanyAddress"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
