@@ -1,4 +1,4 @@
-<mvc:View
+<mvc:View xmlns:core="sap.ui.core"
     xmlns:form="sap.ui.layout.form"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
@@ -99,6 +99,16 @@
                     icon="sap-icon://home"
                     iconColor="Marker"
                 >
+                <Select  items="{/Cities}">
+                 <core:Item key="{CityName}" text="{CityName}">
+                 
+                 
+                 
+                 </core:Item >
+                
+                
+                </Select>
+
 
                  </IconTabFilter>
             </items>
