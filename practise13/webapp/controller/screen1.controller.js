@@ -34,10 +34,10 @@ sap.ui.define(["pujyamv/controller/BaseController",
 //create filter
      var oFilterName = new Filter("name",FilterOperator.Contains,oSearchInput );
      var oFilterType = new Filter("type",FilterOperator.Contains,oSearchInput );
-     //var oFilterNum = new Filter("price",FilterOperator.Contains,oSearchInput );
+     var oFilterColor = new Filter("color",FilterOperator.Contains,oSearchInput );
 
      var oFilter = new Filter({
-        filters: [ oFilterName,oFilterType],
+        filters: [ oFilterName,oFilterType,oFilterColor],
         and :false
      });
 
